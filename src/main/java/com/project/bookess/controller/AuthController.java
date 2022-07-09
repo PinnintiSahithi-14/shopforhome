@@ -44,8 +44,8 @@ public class AuthController {
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
         Optional<User> user = userRepository.findByEmail(loginDto.getUsernameOrEmail());
-        return new ResponseEntity<>(new LoginResponseDto(user.get().getName(), LocalDateTime.now(),"Logged in successfully!",HttpStatus.OK.value()), HttpStatus.OK);
-    }
+        return new ResponseEntity<>(new LoginResponseDto(), HttpStatus.OK);
+    }//user.get().getName(),LocalDateTime.now()
 
     @PostMapping("/signup")
     public ResponseEntity<?> registerUser(@RequestBody SignUpDto signUpDto){

@@ -35,7 +35,7 @@ public class BookController {
         }
 
         return new ResponseEntity<>(new CustomResponse(LocalDateTime.now(),"Book not found!", HttpStatus.OK.value()),HttpStatus.OK);
-    }
+    }//LocalDateTime.now(),"Book not found!",
 
     @PostMapping("/api/user/books/read-later")
     public ResponseEntity<CustomResponse> addBookToReadLater(@RequestBody ReadLaterDto readLaterDto) {

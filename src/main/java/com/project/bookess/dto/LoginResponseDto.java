@@ -18,5 +18,29 @@ public class LoginResponseDto {
     private LocalDateTime localDateTime;
 
     private String message;
-    private int status;
+    public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public LocalDateTime getLocalDateTime() {
+		return localDateTime;
+	}
+	public void setLocalDateTime(LocalDateTime localDateTime) {
+		this.localDateTime = localDateTime;
+	}
+	public String getMessage() {
+		return message;
+	}
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	public int getStatus() {
+		return status;
+	}
+	public void setStatus(int status) {
+		this.status = status;
+	}
+	private int status;
 }

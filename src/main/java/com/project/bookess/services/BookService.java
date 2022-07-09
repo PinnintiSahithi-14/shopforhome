@@ -63,7 +63,6 @@ public class BookService {
     public List<LikedBook> getAllLikedBook() {
         return likedBookRepository.findAll();
     }
-
     public boolean updateBook(Book book) {
         Optional<Book> optBook = bookRepository.findById(book.getId());
         if(optBook.isPresent()) {
