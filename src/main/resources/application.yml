@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url:  "jdbc:postgresql:ec2-34-233-115-14.compute-1.amazonaws.com/df6q2o3blg3vmi/?useSSL=false&allowPublicKeyRetrieval=true"
+    username: vfiomyflivliar
+    password: aa846c7cc1990a218becdb0b6563d7c5f6d7b1e69f08e5b725de9c9daf0d0f7b
+    port : 5432
+  jpa:
+    hibernate.ddl-auto: update
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+    generate-ddl: true
+    show-sql: true
