@@ -1,0 +1,13 @@
+host :ec2-34-233-115-14.compute-1.amazonaws.com
+Database
+df6q2o3blg3vmi
+User
+vfiomyflivliar
+Port
+5432
+Password
+aa846c7cc1990a218becdb0b6563d7c5f6d7b1e69f08e5b725de9c9daf0d0f7b
+URL :
+URI
+postgres://vfiomyflivliar:aa846c7cc1990a218becdb0b6563d7c5f6d7b1e69f08e5b725de9c9daf0d0f7b@ec2-34-233-115-14.compute-1.amazonaws.com:5432/df6q2
+jdbc:mysql://localhost:3306/bookess?useSSL=false&allowPublicKeyRetrieval=true
